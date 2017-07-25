@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  visitor_room_id: MyText
+  json_store: 
+
+two:
+  name: MyText
+  visitor_room_id: MyText
+  json_store: 

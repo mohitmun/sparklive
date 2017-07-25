@@ -1,0 +1,19 @@
+%div{style: "margin-top:70px"}
+  %div{style: "margin: 20px auto;display: table;"}
+    %h2 Log in
+    = form_for(resource, as: resource_name, url: user_session_path, class: "form-control") do |f|
+      .form-group
+        = f.label :username
+        %br/
+        = f.text_field :email, autofocus: true, class: "form-control"
+      .form-group
+        = f.label :password
+        %br/
+        = f.password_field :password, autocomplete: "off", class: "form-control"  
+      .form-group
+        = check_box_tag :doctor
+        = label_tag "I'm Doctor"
+      .form-group
+        = select_tag "hospital", options_for_select(Hospital.pluck(:name, :id)), prompt: "Select Hostpital" 
+      .actions
+        = f.submit "Sign up", class: "btn organge-back"

@@ -1,0 +1,33 @@
+- teams = current_user.get_teams
+.col-md-offset-3.col-md-6.text-center{style: "margin-top: 50px"}
+  - if !current_user.configuration.blank?
+    .col-md-12 
+      .panel.panel-default
+        .panel-heading Copy Following Script tag to your website
+        .panel-body{style:"word-wrap: break-word;" }= current_user.get_script_tag    
+  = form_tag save_config_path, remote: true do |f|
+    .col-md-12
+      %h5 Select team for Text Support
+      %ul.list-group.margin-top10
+        - teams.each do |team|
+          %li.list-group-item
+            = radio_button_tag "selected_teams[text_team_id]", team.id, (current_user.text_team_id == team.id) 
+            = team.name
+    .col-md-12
+      %h5 Select team for Live audio call support
+      %ul.list-group.margin-top10
+        - teams.each do |team|
+          %li.list-group-item
+            = radio_button_tag "selected_teams[audio_team_id]", team.id, (current_user.audio_team_id == team.id)
+            = team.name
+    .col-md-12
+      %h5 Select team for Live video call support
+      %ul.list-group.margin-top10
+        - teams.each do |team|
+          %li.list-group-item
+            = radio_button_tag "selected_teams[video_team_id]", team.id, (current_user.video_team_id == team.id)
+            = team.name
+    .col-md-12
+      = submit_tag "Submit", class: "btn btn-primary"
+%video.video#incoming-call{autoplay: ""}
+%video.video#outgoing-call{autoplay: ""}

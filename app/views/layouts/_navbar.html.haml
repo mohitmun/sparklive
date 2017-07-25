@@ -1,0 +1,24 @@
+%nav#main-navbar.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
+  / Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header
+  .container
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand.page-scroll{style: "margin-left: -7px;", :href => Rails.application.routes.url_helpers.root_path} APP NAME
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.page-scroll{:href => "#{@root_url if !current_page?('/')}#text-carousel-intro-section"} Home
+        %li
+          %a.page-scroll{:href => "#{@root_url if !current_page?('/')}#about-section"} About
+        %li
+          %a.page-scroll{:href => "#{@root_url if !current_page?('/')}#contact-section"} Contact
+        - if @current_user
+          %li= link_to "Sign Out", Rails.application.routes.url_helpers.destroy_user_session_path, method: :delete
+        - else
+          %li= link_to "Sign In", Rails.application.routes.url_helpers.new_user_session_path, method: :delete

@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: sparklive_dev
+  pool: 26
+  host: localhost
+  username: mohitmunjani
+  password: baldor123

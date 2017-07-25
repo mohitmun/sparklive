@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  room_id: MyText
+  person_id: MyText
+  json_store: 
+  text: MyText
+  html: MyText
+  remote_id: MyText
+
+two:
+  room_id: MyText
+  person_id: MyText
+  json_store: 
+  text: MyText
+  html: MyText
+  remote_id: MyText

@@ -1,0 +1,65 @@
+
+
+uses incoming webhook
+handleing messages
+
+close issue ticket
+
+challengas
+  cookie session
+
+
+{give amazon example}
+{some supoprt need live video} 
+{say about small medium compaies}
+coolaborative
+
+
+
+
+
+
+
+
+
+
+
+## Inspiration
+
+Receiving the right advice at the right time makes all the difference. Over the years, I have been made to wait on endless calls with customer care with no resolution at the end of it. This is not how things should work in the age of the Internet. To combat this problem I made SparkLive. It let's you easily reach out to the right support team and get the advice you need immediately. 
+
+Sometimes support through chat is not enough. Imagine you are a hardware startup and fastest way to support your customer is showing live how your device works. In many cases, audio support speed ups the process
+
+Considering a multi faceted approach to support, SparkLive includes live support, live audio and video. The process is immensely simple too. A company can visit [SparkLive](https://sparklive.herokuapp.com) and choose a team that will support a particular set of issues. SparkLive will then generate a friendly script tag that the company can then add to their website and easily let their customers chat with the support through through an interactive blob.
+
+This solution works all size of companies. A small startup can't afford/manage setting up support channel. This integration will simply plug into their CiscoSpark space and support right through it.
+Using SparkLive, its extermely simple to manage internal allocation of agents for support when it comes to Medium-Large companies
+
+
+## What it does
+
+When you logon to [SparkLive](https://sparklive.herokuapp.com) 
+
+## How we built it
+
+
+
+## Challenges we ran into
+
+Since chat window is communicating with SparkLive server, We had to deal with same-origin policy. We solved it using JSONP which allows to request data from a different server than current one.
+Other problem was maintaing session. Imagine if customer opens up new tab and opens chat window there, he should be able to see same chat he did in other one. Only way to do this is maintainig session/
+
+## Accomplishments that we're proud of
+
+Solving same-origin policy and session was good achievement. We built almost all feature we had planned.  
+
+
+## What's next for SparkLive
+
+There are endless possibilies with CiscoSpark. 
+
+Imagine incase of high incoming support volume, it can dynamic allocate support tickets to internal agents. Adding skills, experties, connecting right person to other teams like Tech, Marketing, Operations
+
+Analytics. How much time taken by agents to close raised ticket. which one is faster to respond - text, audio or video? What sort of queries customes asking? Analytics can help improve internal process
+
+When adding SparkLive, right now it show existing team. On same page, one can create new team thre itself

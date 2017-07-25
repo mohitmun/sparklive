@@ -1,0 +1,14 @@
+.widget { margin-bottom: 20px; background-color: #fff; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1); border-radius: 1px; }
+.widget header { margin: 0; color: #111; border: none; background: none; border-bottom: 1px solid #eeeeee; padding: 14px 20px 13px; font-weight: normal; line-height: 28px; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; }
+.widget .widget-content { }
+.widget .widget-content a { color: #333; }
+.widget .widget-content a:hover { color: #e83232; }
+.widget ul { list-style: none; padding: 0; margin: 0; }
+.widget ul > li { border-bottom: 1px solid #eee; padding: 10px 20px; }
+.widget ul > li:last-child { border-bottom: none; }
+.widget ul ul li { border: none; }
+
+.widget header h1 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}

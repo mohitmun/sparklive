@@ -1,0 +1,34 @@
+/ #wrapper
+/   .row
+/     .col-md-6
+/       %iframe{style: "width:100%; height: 100%", src: "https://appr.tc/r/mohit"}
+/     .col-md-6
+/       %iframe{style: "width:100%; height: 100%", src: "https://appr.tc/r/mohit"}
+/   .row
+/     .col-md-6
+/       %iframe{style: "width:100%; height: 100%", src: "https://appr.tc/r/mohit"}
+/     .col-md-6
+/       %iframe{style: "width:100%; height: 100%", src: "https://appr.tc/r/mohit"}
+/ %script
+/   :plain
+/     function drawGrid(lineCount) {
+/         var xSpan = cw / lineCount;
+/         var ySpan = cw / lineCount;
+/         ctx.clearRect(0, 0, cw, ch);
+/         ctx.save();
+/         if (lineCount / 2 === parseInt(lineCount / 2)) {
+/             ctx.translate(.5, .5);
+/         }
+/         ctx.beginPath();
+/         for (var i = 0; i < lineCount; i++) {
+/             var x = (i + 1) * xSpan;
+/             var y = (i + 1) * ySpan;
+/             ctx.moveTo(x, 0);
+/             ctx.lineTo(x, ch);
+/             ctx.moveTo(0, y);
+/             ctx.lineTo(ch, y);
+/         }
+/         ctx.lineWidth = 0.50;
+/         ctx.stroke();
+/         ctx.restore();
+/     }

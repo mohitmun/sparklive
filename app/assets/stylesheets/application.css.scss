@@ -1,0 +1,217 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree . 
+ *= stub "sidebar"
+ *= require_self
+ */
+@import "variables";
+.header {
+    padding: 5px 0;
+    margin-bottom: 30px;
+    background-color: $primary_color;
+    color: #aaa;
+    background-repeat: no-repeat;
+    background-position: 14% center;
+    
+}
+
+
+.dis_sb{
+    height: 100%;
+    background: $primary_color;
+    padding-top: 20px;
+}
+#mapSection .cover{
+    background-color: $primary_color;
+}
+#contact-section .cover {
+    background-color: $primary_color;
+}
+.module_item{
+    background-color: #e7e8e9;
+    padding: 10px 30px 10px 30px;
+    margin: 5px;
+    border-radius: 0px;
+    border: 2px solid rgba(0,0,0,0.1);
+    color: black;
+}
+.bb_o{
+    border-bottom: 2px solid $primary_color;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.margin-top20{
+    margin-top: 20px;
+}
+
+.margin-top10{
+    margin-top: 10px;
+}
+
+.margin20{
+    margin: 20px;
+}
+
+.wizard>.actions .disabled a, .wizard>.actions .disabled a:hover, .wizard>.actions .disabled a:active {
+    background: #eee;
+    color: #aaa;
+}
+.wizard>.actions {
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%;
+}
+.wizard>.actions>ul {
+    display: inline-block;
+    text-align: right;
+}
+.wizard>.actions>ul>li {
+    margin: 0 .5em;
+    float: left;
+
+}
+.wizard>.actions a, .wizard>.actions a:hover, .wizard>.actions a:active {
+    background: $primary_color;
+    color: #fff;
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.organge-back{
+    background-color: $primary_color;
+}
+
+.fl{
+    float: left;
+}
+
+.f20{
+    font-size: 20px;
+}
+.f18{
+    font-size: 18px;
+}
+.f16{
+    font-size: 16px;
+}
+
+.f14{
+    font-size: 14px !important;
+}
+
+.f12{
+    font-size: 12px;
+}
+
+.f17{
+    font-size: 17px;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    max-width: 98%;
+}
+.header-title a h1 {
+    color: #fff;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.mza{
+    margin: 0 auto;
+    display: block;
+}
+
+
+.grid {
+    img{
+    width: 100% !important;
+    height: auto;
+}
+}
+
+.grid {
+    overflow: hidden;
+    width: 188px;
+    min-height: 100px;
+    padding: 7px;
+    background: #fff;
+    margin: 8px;
+    font-size: 12px;
+    float: left;
+    box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+    -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+    -webkit-transition: top 1s ease, left 1s ease;
+    -moz-transition: top 1s ease, left 1s ease;
+    -o-transition: top 1s ease, left 1s ease;
+    -ms-transition: top 1s ease, left 1s ease;
+}
+
+.header-title {
+    height: 48px;
+    overflow: hidden;
+    margin-left: 400px;
+}
+
+.float-left {
+    float: left;
+}
+.header-nav{
+    img {
+    border: 0;
+    max-width: 100%;
+}
+
+}
+.float-right {
+    float: right;
+}
+ .white20{
+ 	color:white;font-size:20px;
+ }
+
+ .topic-item{
+ 	font-size: 30px;
+    color: $primary_color;
+    padding: 20px;
+}
+
+.bg-color-primary{
+	background: $primary_color;
+}
+.card{
+    border: solid;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+  // border: 1px solid #efefef;
+}
+
+.support-title{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #959595;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
