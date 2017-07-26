@@ -1,47 +1,47 @@
 
 
-uses incoming webhook
-handleing messages
-
-close issue ticket
-
-
-
-
-
-
-
-
-
-
 ## Inspiration
 
-Receiving the right advice at the right time makes all the difference. Over the years, I have been made to wait on endless calls with customer care with no resolution at the end of it. This is not how things should work in the age of the Internet. To combat this problem I made SparkLive. It let's you easily reach out to the right support team and get the advice you need immediately. 
+Receiving the right advice at the right time makes all the difference. Over the years, I have been made to wait on endless calls with customer care with no resolution at the end of it, Redirecting me endlessly through different teams. This is not how things should work in the age of the Internet. To combat this problem I made SparkLive. It let's you easily reach out to the right support/sales/tech/ops team and get the advice you need immediately. 
 
 Sometimes support through chat is not enough. Imagine you are a hardware startup and fastest way to support your customer is showing live how your device works. In many cases, audio support speed ups the process
 
 Considering a multi faceted approach to support, SparkLive includes live support, live audio and video. The process is immensely simple too. A company can visit [SparkLive](https://sparklive.herokuapp.com) and choose a team that will support a particular set of issues. SparkLive will then generate a friendly script tag that the company can then add to their website and easily let their customers chat with the support through through an interactive blob.
 
-This solution works all size of companies. A small startup can't afford/manage setting up support channel. This integration will simply plug into their CiscoSpark space and support right through it.
-Using SparkLive, its extermely simple to manage internal allocation of agents for support when it comes to Medium-Large companies
+This solution works all size of companies. A small startup can't afford/manage setting up support channel ground up. This integration will simply plug into their CiscoSpark space and support right through it.
+Using SparkLive, its extremely simple to manage internal allocation of agents for support when it comes to Medium-Large companies
 
 
 ## What it does
 
-When you logon to [SparkLive](https://sparklive.herokuapp.com), it asks you to click on 'Add SparkLive'. once you click on it, it redirects you to consent page of Oauth2 where you give access to your CiscoSpark account to SparkLive. You will be redirected to configure page where you can select existing teams for support. You can select seperate teams for seperate type of support. On you save configuration, it will generate a script tag for you which you can include in your website/webapp. Script tag will add chat window your website and now any visitor can connect you using chat window and you will receive all messages in your CiscoSpark space/team
+When you logon to [SparkLive](https://sparklive.herokuapp.com), it asks you to click on 'Add SparkLive'.
 
-Major Features
+![Step 1](https://github.com/mohitmun/sparklive/raw/master/public/hiw1.png)
+
+Once you click on it, it redirects you to consent page of Oauth2 where you give access to your CiscoSpark account to SparkLive. You will be redirected to configure page where you can select existing teams for support. You can select separate teams for separate type of support. Once you save configuration, it will generate a script tag for you which you can include in your website/webapp.
+
+![Step 2](https://github.com/mohitmun/sparklive/raw/master/public/hiw2.png)
+
+Script tag will add live chat window your website and now any visitor can connect you using chat window and you will receive all messages in your CiscoSpark space/team
+
+![Step 3](https://github.com/mohitmun/sparklive/raw/master/public/hiw3.png)
+
+Now whenever new message comes in you will get notified in respective team and you can chat from there
+
+![Step 4](https://github.com/mohitmun/sparklive/raw/master/public/hiw4.png)
+
+## Major Features
 
 1. Audio, Video and Text support
 2. Get user demographics like browser/platform details, location details 
 3. Set different teams for differnt type of support
 4. System generated messages like "User joined", "Ticket closed", "Call initiated"
 5. Maintaing session. which allows users refresh page without losing chat data
+6. Uses webhook to receive events
 
 ## How we built it
 
-
-
+We first started learning about CiscoSpark, and its developer APIs. One by one we modelled data like room, messages and user in out rails app. we found some chat window design on internet and used it in project. then we wrote main javascript script which handles most client side logic and then integrating all this
 
 ## Challenges we ran into
 
