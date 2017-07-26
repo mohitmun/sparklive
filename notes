@@ -5,16 +5,6 @@ handleing messages
 
 close issue ticket
 
-challengas
-  cookie session
-
-
-{give amazon example}
-{some supoprt need live video} 
-{say about small medium compaies}
-coolaborative
-
-
 
 
 
@@ -38,21 +28,29 @@ Using SparkLive, its extermely simple to manage internal allocation of agents fo
 
 ## What it does
 
-When you logon to [SparkLive](https://sparklive.herokuapp.com) 
+When you logon to [SparkLive](https://sparklive.herokuapp.com), it asks you to click on 'Add SparkLive'. once you click on it, it redirects you to consent page of Oauth2 where you give access to your CiscoSpark account to SparkLive. You will be redirected to configure page where you can select existing teams for support. You can select seperate teams for seperate type of support. On you save configuration, it will generate a script tag for you which you can include in your website/webapp. Script tag will add chat window your website and now any visitor can connect you using chat window and you will receive all messages in your CiscoSpark space/team
+
+Major Features
+
+1. Audio, Video and Text support
+2. Get user demographics like browser/platform details, location details 
+3. Set different teams for differnt type of support
+4. System generated messages like "User joined", "Ticket closed", "Call initiated"
+5. Maintaing session. which allows users refresh page without losing chat data
 
 ## How we built it
+
 
 
 
 ## Challenges we ran into
 
 Since chat window is communicating with SparkLive server, We had to deal with same-origin policy. We solved it using JSONP which allows to request data from a different server than current one.
-Other problem was maintaing session. Imagine if customer opens up new tab and opens chat window there, he should be able to see same chat he did in other one. Only way to do this is maintainig session/
+Other problem was maintaing session. Imagine if customer opens up new tab and opens chat window there, he should be able to see same chat he did in other one. Only way to do this is maintainig session. Most of chat support client doesn't do that
 
 ## Accomplishments that we're proud of
 
 Solving same-origin policy and session was good achievement. We built almost all feature we had planned.  
-
 
 ## What's next for SparkLive
 

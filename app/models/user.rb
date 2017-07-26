@@ -68,15 +68,15 @@ class User  < ActiveRecord::Base
   end
 
   def text_team_id
-    return configuration["text_team_id"]
+    return configuration["text_team_id"] rescue nil
   end
 
   def video_team_id
-    return configuration["video_team_id"]
+    return configuration["video_team_id"] rescue nil
   end
 
   def audio_team_id
-    return configuration["audio_team_id"]
+    return configuration["audio_team_id"] rescue nil
   end
 
   def create_new_room(visitor_id, support_type: nil)

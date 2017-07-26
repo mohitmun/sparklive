@@ -1,4 +1,4 @@
-visitor_id=7656299137;sparklive_url = 'https://4c0d0a4e.ngrok.io';refresh_rate = 1000
+visitor_id=318126358;sparklive_url = 'https://sparklive.herokuapp.com';refresh_rate = 1000
 console.log("chu")
 var mainStyle = '<link href="'+sparklive_url+'/sparklive.css" rel="stylesheet">'
 var addStyle = "<style> #sparklive-widget .sparklive-widget-messages>div {margin-left: 0px;}#sparklive-widget .sparklive-widget-messages{margin-bottom: 10px;padding: 20px;}#sparklive-widget .sparklive-widget-input-container{bottom: 0 !important;}</style>";
